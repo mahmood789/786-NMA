@@ -1,0 +1,85 @@
+library(shinytest2)
+
+test_that("{shinytest2} recording: 786MIIORRRNMA", {
+  app <- AppDriver$new(variant = platform_variant(), name = "786MIIORRRNMA", seed = 1, 
+      height = 959, width = 1619)
+  app$set_inputs(dark_mode = FALSE, allow_no_input_binding_ = TRUE, priority_ = "event")
+  app$set_inputs(`dataUpload-file` = character(0))
+  app$click("diagnostics-runDiagnostics")
+  app$set_inputs(`network-vertexSize` = 30)
+  app$set_inputs(`network-vertexLabelCex` = 1.2)
+  app$set_inputs(`network-edgeWidth` = 1)
+  app$set_inputs(`results-forestCex` = 1)
+  app$set_inputs(`results-forestDigits` = 2)
+  app$set_inputs(`results-forestDigitsSE` = 2)
+  app$set_inputs(`results-forestDigitsPval` = 3)
+  app$set_inputs(`results-freqLabelSize` = 1)
+  app$set_inputs(tabs_447966173 = "dataUpload")
+  app$set_inputs(`dataUpload-format` = "contrast")
+  rlang::warn(paste0("``dataUpload-file`` should be the path to the file, relative to the app's tests/testthat directory.\n", 
+      "Remove this warning when the file is in the correct location."))
+  app$upload_file(`dataUpload-file` = "contrast.txt")
+  app$set_inputs(tabs_447966173 = "network")
+  app$set_inputs(`network-focus` = "DrugB")
+  app$set_inputs(`network-focus` = "DrugC")
+  app$set_inputs(tabs_447966173 = "analysis")
+  app$set_inputs(`analysis-runMetareg` = TRUE)
+  app$set_inputs(`analysis-covariate` = "covariate")
+  app$set_inputs(`analysis-covariate` = c("covariate", "covariate2"))
+  app$set_inputs(tabs_447966173 = "diagnostics")
+  app$set_inputs(tabs_447966173 = "results")
+  app$set_inputs(`results-effectTable_rows_current` = c(1, 2, 3), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`results-effectTable_rows_all` = c(1, 2, 3), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`results-effectTable_state` = c(1745350171899, 0, 10, "", TRUE, 
+      FALSE, TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), 
+      c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE)), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`results-treatmentRanking_rows_current` = c(1, 2, 3), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`results-treatmentRanking_rows_all` = c(1, 2, 3), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`results-treatmentRanking_state` = c(1745350172454, 0, 10, "", TRUE, 
+      FALSE, TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), 
+      c(TRUE, "", TRUE, FALSE, TRUE)), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`results-leaveOneOut_rows_current` = 1, allow_no_input_binding_ = TRUE)
+  app$set_inputs(`results-leaveOneOut_rows_all` = 1, allow_no_input_binding_ = TRUE)
+  app$set_inputs(`results-leaveOneOut_state` = c(1745350176620, 0, 10, "", TRUE, 
+      FALSE, TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE)), 
+      allow_no_input_binding_ = TRUE)
+  app$set_inputs(tabs_447966173 = "inconsistency")
+  app$set_inputs(tabs_447966173 = "exampleCSV")
+  app$set_inputs(tabs_447966173 = "instructions")
+  app$set_inputs(tabs_447966173 = "dataUpload")
+  app$set_inputs(`dataUpload-dataPreview_rows_selected` = character(0), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`dataUpload-dataPreview_columns_selected` = character(0), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`dataUpload-dataPreview_cells_selected` = character(0), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`dataUpload-dataPreview_rows_current` = character(0), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`dataUpload-dataPreview_rows_all` = character(0), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`dataUpload-dataPreview_state` = character(0), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`dataUpload-dataPreview_search` = "", allow_no_input_binding_ = TRUE)
+  app$set_inputs(`dataUpload-dataPreview_cell_clicked` = character(0), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`dataUpload-dataPreview_rows_current` = c(1, 2, 3, 4, 5, 6), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`dataUpload-dataPreview_rows_all` = c(1, 2, 3, 4, 5, 6), allow_no_input_binding_ = TRUE)
+  app$set_inputs(`dataUpload-dataPreview_state` = c(1745350186895, 0, 10, "", TRUE, 
+      FALSE, TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), 
+      c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", 
+          TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
+          TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE)), 
+      allow_no_input_binding_ = TRUE)
+  rlang::warn(paste0("``dataUpload-file`` should be the path to the file, relative to the app's tests/testthat directory.\n", 
+      "Remove this warning when the file is in the correct location."))
+  app$upload_file(`dataUpload-file` = "armlevel.txt")
+  app$set_inputs(`dataUpload-format` = "arm")
+  app$set_inputs(tabs_447966173 = "network")
+  app$set_inputs(`network-focus` = "DrugA")
+  app$set_inputs(`network-focus` = "DrugB")
+  app$set_inputs(tabs_447966173 = "analysis")
+  app$set_inputs(tabs_447966173 = "diagnostics")
+  app$set_inputs(tabs_447966173 = "results")
+  app$set_inputs(tabs_447966173 = "inconsistency")
+  app$set_inputs(tabs_447966173 = "diagnostics")
+  app$expect_screenshot()
+  app$set_inputs(tabs_447966173 = "results")
+  app$set_inputs(tabs_447966173 = "analysis")
+  app$set_inputs(tabs_447966173 = "dataUpload")
+  app$set_inputs(tabs_447966173 = "network")
+  app$expect_download("network-dlNetworkIgraphPNG")
+  app$expect_screenshot()
+})
